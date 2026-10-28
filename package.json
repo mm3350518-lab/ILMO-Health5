@@ -5,7 +5,7 @@
   "private": true,
   "description": "صيدليتي - Saydalati",
   "scripts": {
-    "build": "node -e \"const fs=require('fs');fs.mkdirSync('www',{recursive:true});for(const f of ['index.html','drugs.html','cases.html','library-data.json']){if(fs.existsSync(f))fs.copyFileSync(f,'www/'+f)}\""
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('www',{recursive:true});for(const f of ['index.html','drugs.html','cases.html','library.html','library-data.json']){if(fs.existsSync(f))fs.copyFileSync(f,'www/'+f)}\""
   },
   "dependencies": {
     "@capacitor/core": "^7.4.3",
