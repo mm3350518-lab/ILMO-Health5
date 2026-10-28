@@ -1,0 +1,552 @@
+{
+  "title": "ILMO Health — Scientific Library",
+  "version": "1.0.0",
+  "language": "en",
+  "modules": [
+    {
+      "id": "cvs",
+      "name": "Cardiovascular System",
+      "ar": "الجهاز القلبي الوعائي",
+      "icon": "❤️",
+      "intro": "Study map for hypertension, angina and ischemic heart disease, heart failure, arrhythmias, thromboembolism, dyslipidaemia, and diuretics. Use local protocols and current product information for patient-specific decisions.",
+      "topics": [
+        {
+          "title": "Diuretics",
+          "class": "Thiazides, loop diuretics, potassium-sparing diuretics",
+          "moa": "Thiazides inhibit the Na⁺/Cl⁻ cotransporter in the distal convoluted tubule. Loop diuretics inhibit NKCC2 in the thick ascending limb. Mineralocorticoid-receptor antagonists reduce aldosterone-mediated sodium retention and potassium loss.",
+          "uses": "Hypertension, oedema, heart failure, and selected electrolyte or endocrine conditions depending on the agent.",
+          "risks": "Volume depletion, hypotension, kidney-function changes, and electrolyte abnormalities. Loop/thiazide agents may lower potassium; spironolactone/eplerenone may raise potassium. Thiazides can affect uric acid and glucose.",
+          "interactions": "NSAIDs can reduce diuretic and antihypertensive effects and worsen renal risk; combining potassium-raising medicines with potassium-sparing agents increases hyperkalaemia risk. Lithium concentrations may rise with some diuretics.",
+          "counsel": "Take at a practical time that limits nocturia; monitor blood pressure, weight when advised, kidney function and electrolytes. Seek advice for marked weakness, fainting, or significant dehydration."
+        },
+        {
+          "title": "ACE inhibitors and ARBs",
+          "class": "ACE inhibitors (e.g., enalapril, lisinopril); ARBs (e.g., losartan, valsartan)",
+          "moa": "ACE inhibitors reduce angiotensin II formation and aldosterone release. ARBs block the angiotensin II AT₁ receptor. Both reduce vasoconstriction and aldosterone effects.",
+          "uses": "Hypertension, heart failure, and kidney protection in selected patients, particularly with albuminuria, depending on guideline and patient factors.",
+          "risks": "Hypotension, increased potassium, and a rise in creatinine can occur. ACE inhibitors may cause cough and rarely angioedema. Avoid during pregnancy; assess renal artery stenosis and kidney function context.",
+          "interactions": "Avoid routine ACE inhibitor + ARB combination. Potassium supplements, potassium-sparing diuretics and some other drugs raise hyperkalaemia risk; NSAIDs can worsen renal function.",
+          "counsel": "Check blood pressure, creatinine/eGFR and potassium at baseline and after initiation or dose changes as directed. Facial, lip or tongue swelling needs emergency care."
+        },
+        {
+          "title": "Beta blockers",
+          "class": "Examples: bisoprolol, metoprolol, carvedilol, propranolol",
+          "moa": "Block beta-adrenergic receptors, reducing heart rate and contractility; selected agents also reduce renin release. Receptor selectivity and additional alpha-blockade vary by agent.",
+          "uses": "Selected patients with heart failure, angina, rate control, post-myocardial infarction care, hypertension, migraine prevention or tremor depending on the agent.",
+          "risks": "Bradycardia, hypotension, fatigue, sexual adverse effects; may mask some hypoglycaemia warning symptoms. Non-selective agents can provoke bronchospasm in susceptible patients.",
+          "interactions": "Other rate-slowing drugs (e.g., verapamil, diltiazem, digoxin) can increase bradycardia/heart block risk. Abrupt withdrawal can worsen angina or trigger events.",
+          "counsel": "Do not stop suddenly without clinical advice. Monitor pulse and blood pressure as instructed; report fainting, severe wheeze or unusually slow pulse."
+        },
+        {
+          "title": "Antiplatelets and anticoagulants",
+          "class": "Aspirin, P2Y12 inhibitors, heparins, warfarin, direct oral anticoagulants",
+          "moa": "Antiplatelets reduce platelet activation/aggregation. Anticoagulants inhibit clotting factors or their synthesis, reducing fibrin-clot formation; mechanisms differ by medicine.",
+          "uses": "Prevention/treatment of arterial or venous thrombosis according to diagnosis, procedure and risk assessment.",
+          "risks": "Bleeding is the key class concern. Agent-specific issues include gastrointestinal injury with aspirin, thrombocytopenia with heparins, and drug/renal-function constraints with several oral anticoagulants.",
+          "interactions": "NSAIDs and other antithrombotics can increase bleeding. Warfarin has many drug/food interactions and requires INR monitoring. Strong enzyme/P-gp modifiers may alter some direct oral anticoagulants.",
+          "counsel": "Follow the exact prescribed schedule; never double missed doses without medicine-specific instructions. Seek urgent help for serious bleeding, black stools, blood in urine, severe headache after injury, or unexplained major bruising."
+        }
+      ]
+    },
+    {
+      "id": "gi",
+      "name": "Gastrointestinal System",
+      "ar": "الجهاز الهضمي",
+      "icon": "🫃",
+      "intro": "Covers reflux and peptic ulcer disease, nausea/vomiting, diarrhoea and constipation, inflammatory bowel disease, and common symptom management.",
+      "topics": [
+        {
+          "title": "Antacids and alginates",
+          "class": "Aluminium, magnesium, calcium salts; alginate combinations",
+          "moa": "Antacids neutralise existing gastric acid. Alginates form a floating barrier that can reduce reflux after meals.",
+          "uses": "Short-term relief of heartburn and dyspepsia; alginates are useful for reflux symptoms in suitable patients.",
+          "risks": "Aluminium salts may cause constipation; magnesium salts may cause diarrhoea. Sodium-containing products may be unsuitable for some patients on sodium restriction. Excessive calcium carbonate can cause metabolic problems.",
+          "interactions": "Antacids can reduce absorption of medicines such as tetracyclines, fluoroquinolones, iron and levothyroxine; separate administration according to the product or pharmacist guidance.",
+          "counsel": "Use according to label and avoid prolonged self-treatment of persistent symptoms. Red flags include difficulty swallowing, gastrointestinal bleeding, persistent vomiting, unexplained weight loss or new severe symptoms."
+        },
+        {
+          "title": "Laxatives",
+          "class": "Bulk-forming, osmotic, stimulant, stool softener",
+          "moa": "Bulk-forming agents retain water and increase stool mass; osmotic agents draw water into the bowel; stimulants increase intestinal motility/secretion; softeners help water mix with stool.",
+          "uses": "Constipation management selected by cause, duration, patient age and comorbidities.",
+          "risks": "Bloating with bulk agents, diarrhoea/dehydration with osmotic agents, and cramping with stimulants. Suspected obstruction requires assessment rather than routine laxative use.",
+          "interactions": "Bulk-forming products can affect absorption of other medicines; maintain suitable separation and adequate fluid unless restricted. Electrolyte disturbance may matter with prolonged/excessive use.",
+          "counsel": "Increase fibre, movement and fluids when appropriate. Seek assessment for severe abdominal pain, vomiting, blood in stool, or a new persistent change in bowel habit."
+        },
+        {
+          "title": "Proton pump inhibitors (PPIs)",
+          "class": "Omeprazole, lansoprazole, pantoprazole and related agents",
+          "moa": "Irreversibly inhibit the gastric parietal-cell H⁺/K⁺-ATPase proton pump, strongly suppressing acid secretion.",
+          "uses": "GERD, peptic ulcer disease, selected H. pylori regimens and gastroprotection when indicated.",
+          "risks": "Headache and gastrointestinal effects may occur. Long-term use should have a continuing indication reviewed; potential associations include low magnesium/B12, enteric infection and fracture risk in selected contexts.",
+          "interactions": "Omeprazole/esomeprazole can affect CYP2C19 and may interact with clopidogrel; other interactions vary by agent. Acid suppression can alter absorption of medicines needing an acidic environment.",
+          "counsel": "Use at the product-recommended time, often before a meal. Do not continue indefinitely without review if symptoms persist or the original indication has ended."
+        },
+        {
+          "title": "Antiemetics",
+          "class": "5-HT₃ antagonists, dopamine antagonists, antihistamines, others",
+          "moa": "Different groups block serotonin, dopamine, histamine or other pathways involved in nausea and vomiting.",
+          "uses": "Cause-specific management of nausea/vomiting, motion sickness or treatment-related symptoms according to agent.",
+          "risks": "Sedation and anticholinergic effects with some antihistamines; extrapyramidal effects with dopamine antagonists; QT prolongation with selected medicines including ondansetron in susceptible patients.",
+          "interactions": "Combining sedatives increases impairment. QT-prolonging medicines and electrolyte abnormalities may increase arrhythmia risk for susceptible agents.",
+          "counsel": "Choose treatment based on likely cause and patient factors. Persistent vomiting, dehydration, severe pain, blood, or neurological symptoms need clinical assessment."
+        }
+      ]
+    },
+    {
+      "id": "resp",
+      "name": "Respiratory System",
+      "ar": "الجهاز التنفسي",
+      "icon": "🫁",
+      "intro": "Asthma, COPD, allergic rhinitis, cough and common respiratory symptoms; inhaler technique is a core counselling skill.",
+      "topics": [
+        {
+          "title": "Inhaled bronchodilators",
+          "class": "SABA, LABA, SAMA, LAMA",
+          "moa": "Beta₂ agonists relax airway smooth muscle; muscarinic antagonists block vagal bronchoconstriction. Duration and receptor selectivity differ by agent.",
+          "uses": "Relief of bronchospasm and maintenance therapy in asthma/COPD according to treatment plans. LABA use in asthma should follow guideline-required inhaled corticosteroid combinations.",
+          "risks": "Beta₂ agonists may cause tremor, palpitations and hypokalaemia; antimuscarinics can cause dry mouth and may worsen urinary retention or precipitate eye symptoms if sprayed into eyes.",
+          "interactions": "Other sympathomimetics can increase cardiovascular effects; non-selective beta blockers may antagonise beta₂ agonists. Review combinations and comorbidities.",
+          "counsel": "Demonstrate the exact device technique, check dose counter and expiry, clean as directed, and use a spacer when appropriate. A reliever needed more often than the action plan allows signals poor control."
+        },
+        {
+          "title": "Inhaled corticosteroids (ICS)",
+          "class": "Beclometasone, budesonide, fluticasone and related agents",
+          "moa": "Activate glucocorticoid receptors and reduce airway inflammation, hyperresponsiveness and exacerbation risk.",
+          "uses": "Controller treatment for asthma; selected COPD patients based on exacerbation history and phenotype. Not immediate rescue therapy.",
+          "risks": "Oral candidiasis, hoarseness and throat irritation; systemic effects are possible with high doses or prolonged exposure.",
+          "interactions": "Strong CYP3A4 inhibitors can increase systemic exposure to some inhaled corticosteroids. Consider cumulative steroid exposure.",
+          "counsel": "Use regularly as prescribed; rinse mouth and spit after use. Check technique and adherence before concluding treatment is ineffective."
+        },
+        {
+          "title": "Cough and cold products",
+          "class": "Expectorants, selected antitussives, saline and symptom relief products",
+          "moa": "Mechanisms vary: expectorants aim to facilitate mucus clearance; antitussives reduce cough reflex activity; saline moisturises/clears nasal secretions.",
+          "uses": "Short-term symptomatic relief where appropriate after checking age, cause, duration and red flags.",
+          "risks": "Combination products can duplicate ingredients. Sedating products can impair alertness. Evidence and age restrictions vary; opioid cough products have important restrictions.",
+          "interactions": "Avoid duplicate paracetamol/acetaminophen across combination products. Alcohol and sedatives increase impairment with sedating ingredients.",
+          "counsel": "Cough lasting several weeks, breathlessness, chest pain, blood, high/persistent fever or deterioration needs assessment. Use extra caution with children and multi-ingredient products."
+        },
+        {
+          "title": "Intranasal corticosteroids and decongestants",
+          "class": "Fluticasone/mometasone and topical sympathomimetic decongestants",
+          "moa": "Intranasal corticosteroids reduce local allergic inflammation; decongestants constrict nasal mucosal vessels.",
+          "uses": "Allergic rhinitis; decongestants for brief relief of nasal blockage.",
+          "risks": "Steroid sprays may cause irritation or nosebleeds. Topical decongestants used too long can cause rebound congestion.",
+          "interactions": "Systemic exposure interactions depend on agent; review other sympathomimetics and cardiovascular conditions.",
+          "counsel": "Aim spray away from the nasal septum and use consistently for best effect. The source guide advises limiting topical decongestants to short-term use, usually no longer than 7 days; follow current product guidance."
+        }
+      ]
+    },
+    {
+      "id": "cns",
+      "name": "Central Nervous System",
+      "ar": "الجهاز العصبي المركزي",
+      "icon": "🧠",
+      "intro": "Dementia, depression and anxiety, psychosis, epilepsy, sleep disorders, pain and medicines affecting alertness.",
+      "topics": [
+        {
+          "title": "Medicines for dementia",
+          "class": "Acetylcholinesterase inhibitors; memantine",
+          "moa": "Donepezil, galantamine and rivastigmine inhibit acetylcholinesterase, increasing acetylcholine. Memantine modulates NMDA glutamate receptors.",
+          "uses": "Selected patients with Alzheimer’s disease; expected benefit is generally symptomatic and may be modest.",
+          "risks": "Cholinesterase inhibitors can cause nausea, diarrhoea, reduced appetite, bradycardia or syncope. Memantine may cause dizziness, headache or confusion.",
+          "interactions": "Other medicines that slow heart rate may increase bradycardia risk. Anticholinergic medicines can oppose cholinesterase-inhibitor effects.",
+          "counsel": "The source guide notes rivastigmine and galantamine are taken with or just after food. Review cognition, function, tolerability and caregiver observations."
+        },
+        {
+          "title": "Antidepressants",
+          "class": "SSRIs, SNRIs, tricyclics and other agents",
+          "moa": "Alter serotonergic and/or noradrenergic signalling; mechanisms and time to clinical effect vary by class.",
+          "uses": "Depression and selected anxiety, pain or other conditions depending on agent.",
+          "risks": "GI effects, sleep changes and sexual adverse effects are common with some agents. Tricyclics can cause anticholinergic effects and cardiac toxicity in overdose. Monitor for mood worsening or emergent suicidal thoughts, particularly early in treatment or after dose changes.",
+          "interactions": "Serotonergic combinations can cause serotonin toxicity. MAOIs have major interaction restrictions; bleeding risk can increase with NSAIDs/anticoagulants for some SSRIs/SNRIs.",
+          "counsel": "Benefits often take several weeks. Do not stop abruptly without advice; tapering may be needed. Seek urgent help for severe agitation, fever with rigidity, or concerning mood changes."
+        },
+        {
+          "title": "Antiepileptic medicines",
+          "class": "Multiple mechanisms including sodium-channel effects, GABA enhancement and calcium-channel modulation",
+          "moa": "Reduce neuronal excitability through drug-specific mechanisms; selection depends on seizure type and patient factors.",
+          "uses": "Seizure disorders and selected mood, migraine or neuropathic-pain indications.",
+          "risks": "Drowsiness, dizziness and coordination effects are common across several agents; serious skin, liver, blood or pregnancy-related risks are medicine-specific.",
+          "interactions": "Enzyme-inducing agents can lower concentrations of many medicines including hormonal contraceptives; valproate has important interaction and pregnancy safety concerns.",
+          "counsel": "Take consistently and do not stop suddenly. Discuss pregnancy plans, contraception and monitoring with the treating clinician; follow driving guidance."
+        },
+        {
+          "title": "Sedating CNS medicines",
+          "class": "Benzodiazepines, hypnotics, opioids and sedating antihistamines",
+          "moa": "Different targets reduce CNS activity, promote sleep or relieve pain; additive effects are possible.",
+          "uses": "Only for selected indications and durations after risk assessment.",
+          "risks": "Drowsiness, falls, impaired driving, tolerance and dependence; combining opioids with benzodiazepines or other sedatives can cause dangerous respiratory depression.",
+          "interactions": "Avoid unreviewed combinations with alcohol, opioids and other sedatives. Check all OTC and prescription products.",
+          "counsel": "Do not drive or operate machinery if impaired. Use only as prescribed and seek clinician advice before stopping long-term benzodiazepines or opioids."
+        }
+      ]
+    },
+    {
+      "id": "infect",
+      "name": "Infections & Antimicrobials",
+      "ar": "العدوى ومضادات الميكروبات",
+      "icon": "🦠",
+      "intro": "Antibacterial, antiviral and antifungal principles; correct indication, dose, duration, allergy history and antimicrobial stewardship are essential.",
+      "topics": [
+        {
+          "title": "Beta-lactam antibiotics",
+          "class": "Penicillins, cephalosporins and related agents",
+          "moa": "Bind penicillin-binding proteins and inhibit bacterial cell-wall synthesis; activity depends on organism susceptibility and drug exposure.",
+          "uses": "Common bacterial infections according to local resistance patterns, culture results and clinical guidelines.",
+          "risks": "Allergic reactions, diarrhoea and agent-specific organ or blood effects. Severe immediate allergy history requires careful assessment.",
+          "interactions": "Some agents interact with anticoagulants; renal impairment affects dosing for many beta-lactams. Probenecid can alter renal elimination of selected penicillins.",
+          "counsel": "Take exactly as prescribed; do not share or save antibiotics. Seek urgent care for breathing difficulty or swelling after a dose; report severe or persistent diarrhoea."
+        },
+        {
+          "title": "Macrolides and fluoroquinolones",
+          "class": "Azithromycin/clarithromycin; ciprofloxacin/levofloxacin and related agents",
+          "moa": "Macrolides inhibit the 50S ribosomal subunit. Fluoroquinolones inhibit bacterial DNA gyrase/topoisomerase IV.",
+          "uses": "Selected susceptible bacterial infections when indicated; not interchangeable across all organisms or sites.",
+          "risks": "Macrolides can prolong QT and cause GI effects. Fluoroquinolones have potentially serious tendon, nerve and CNS adverse effects and should be reserved for appropriate indications.",
+          "interactions": "Macrolide interaction potential varies: clarithromycin is a strong CYP3A4 inhibitor. Fluoroquinolones can chelate with iron, calcium, magnesium and antacids; separate according to product instructions.",
+          "counsel": "Check local guidelines, allergy history, pregnancy status and renal function. Report tendon pain, neuropathic symptoms, palpitations or severe adverse effects promptly."
+        },
+        {
+          "title": "Antifungals",
+          "class": "Azoles, terbinafine, nystatin and others",
+          "moa": "Azoles inhibit ergosterol synthesis; terbinafine inhibits squalene epoxidase; nystatin binds fungal membrane sterols.",
+          "uses": "Choice depends on site, organism, severity and whether topical or systemic treatment is required.",
+          "risks": "Topical agents may irritate. Systemic azoles can cause liver effects and clinically important interactions; terbinafine also requires attention to hepatic risk.",
+          "interactions": "Many azoles inhibit CYP enzymes and can interact with anticoagulants, statins and other medicines. Review the specific agent and route.",
+          "counsel": "Use the correct formulation for the body site. The source guide notes topical therapy for localised infection and longer or systemic treatment for selected scalp, nail, widespread or refractory infections."
+        },
+        {
+          "title": "Antimicrobial stewardship",
+          "class": "Principles for all antimicrobial classes",
+          "moa": "Match drug spectrum, exposure and duration to the suspected/confirmed pathogen while minimising unnecessary selection pressure.",
+          "uses": "Support rational prescribing and safe dispensing; cultures and local guidance help when indicated.",
+          "risks": "Unnecessary use causes adverse effects, resistance and disruption of normal flora.",
+          "interactions": "Check all concurrent medicines, allergies, renal/hepatic function and pregnancy considerations before supply.",
+          "counsel": "Antibiotics do not treat viral infections. Follow prescribed instructions and seek reassessment if symptoms worsen or fail to improve within the expected period."
+        }
+      ]
+    },
+    {
+      "id": "endo",
+      "name": "Endocrine System",
+      "ar": "جهاز الغدد الصماء",
+      "icon": "🧬",
+      "intro": "Diabetes medicines, thyroid disorders, corticosteroids and other endocrine therapies. Dosing and monitoring depend strongly on patient context.",
+      "topics": [
+        {
+          "title": "Metformin and biguanides",
+          "class": "Biguanide",
+          "moa": "Metformin reduces hepatic glucose production and improves insulin sensitivity; it does not directly stimulate insulin release.",
+          "uses": "Common first-line option for type 2 diabetes when appropriate; other uses depend on clinician assessment and local licensing.",
+          "risks": "GI upset/diarrhoea, abdominal discomfort and metallic taste. Long-term use can lower vitamin B12. Lactic acidosis is rare but serious, with risk influenced by acute illness and severe renal dysfunction.",
+          "interactions": "Review renal function and situations causing hypoxia/dehydration; contrast procedures may require temporary interruption depending on renal status and local policy. Alcohol excess may increase risk.",
+          "counsel": "Take with or just after food and titrate as prescribed to improve tolerance. Monitor glucose/HbA1c and renal function; ask about B12 testing if risk or symptoms."
+        },
+        {
+          "title": "Sulfonylureas and meglitinides",
+          "class": "Insulin secretagogues",
+          "moa": "Stimulate pancreatic beta-cell insulin release by acting on ATP-sensitive potassium channels.",
+          "uses": "Type 2 diabetes in selected patients; risk of hypoglycaemia influences selection.",
+          "risks": "Hypoglycaemia and weight gain; risk is greater with missed meals, older age or renal impairment depending on agent.",
+          "interactions": "Alcohol and several medicines may alter glucose control; beta blockers may mask some warning symptoms. Check agent-specific interactions.",
+          "counsel": "Meal timing matters. The source guide describes several sulfonylureas as taken with food, with formulation-specific directions for glipizide. Teach recognition and management of hypoglycaemia according to the care plan."
+        },
+        {
+          "title": "DPP-4 and SGLT2 inhibitors",
+          "class": "Gliptins; gliflozins",
+          "moa": "DPP-4 inhibitors prolong incretin activity and glucose-dependent insulin responses. SGLT2 inhibitors increase urinary glucose excretion in the kidney.",
+          "uses": "Type 2 diabetes, with some SGLT2 agents also used for heart failure or chronic kidney disease under specific indications.",
+          "risks": "DPP-4 inhibitors: possible joint pain and rare pancreatitis; SGLT2 inhibitors: genital fungal infections, volume depletion and rare ketoacidosis. Risks vary by agent and patient.",
+          "interactions": "Diuretics may increase volume depletion with SGLT2 inhibitors; insulin or sulfonylureas may raise hypoglycaemia risk when combined. Review renal function and other medicines.",
+          "counsel": "Follow product-specific timing. SGLT2 inhibitor sick-day and perioperative interruption instructions are important; urgent assessment is needed for symptoms suggestive of ketoacidosis, even if glucose is not very high."
+        },
+        {
+          "title": "Corticosteroids",
+          "class": "Systemic and topical glucocorticoids",
+          "moa": "Activate glucocorticoid receptors, altering gene transcription and suppressing inflammation and immune activity.",
+          "uses": "Many inflammatory, allergic, autoimmune and endocrine conditions depending on route and agent.",
+          "risks": "Hyperglycaemia, mood/sleep changes, infection risk, hypertension, bone effects and adrenal suppression with systemic exposure; local effects vary by route.",
+          "interactions": "Can affect glucose-lowering therapy and interact with NSAIDs (GI risk), vaccines and CYP3A4 modifiers for selected agents.",
+          "counsel": "Use the lowest effective dose for the prescribed duration. Do not abruptly stop prolonged systemic therapy without a taper plan; follow route-specific technique and precautions."
+        }
+      ]
+    },
+    {
+      "id": "gu",
+      "name": "Genitourinary System",
+      "ar": "الجهاز البولي والتناسلي",
+      "icon": "🚻",
+      "intro": "Urinary symptoms, urinary tract infections, overactive bladder, benign prostatic hyperplasia and selected reproductive-health medicines.",
+      "topics": [
+        {
+          "title": "Urinary tract infection principles",
+          "class": "Antibiotics selected by syndrome, culture and local resistance",
+          "moa": "Antibiotic mechanisms vary; selection depends on likely pathogen, site, susceptibility and patient risk factors.",
+          "uses": "Treat symptomatic infections after assessing uncomplicated versus complicated disease and possible pyelonephritis.",
+          "risks": "Adverse effects and resistance; kidney function, pregnancy, allergies and age can change suitable options.",
+          "interactions": "Check renal function, anticoagulants and agent-specific interactions; urinary analgesics do not treat the infection itself.",
+          "counsel": "Fever, flank pain, vomiting, pregnancy, systemic illness, or symptoms in higher-risk patients require prompt clinical assessment. Follow the full prescribed plan."
+        },
+        {
+          "title": "Overactive bladder medicines",
+          "class": "Antimuscarinics and beta-3 agonists",
+          "moa": "Antimuscarinics reduce detrusor contractions by blocking muscarinic receptors; beta-3 agonists relax the bladder during filling.",
+          "uses": "Urgency, frequency and urge incontinence after appropriate assessment and non-drug measures.",
+          "risks": "Antimuscarinics can cause dry mouth, constipation, blurred vision and cognitive effects; may worsen urinary retention. Beta-3 agonists can affect blood pressure.",
+          "interactions": "Cumulative anticholinergic burden increases adverse effects. CYP interactions and blood-pressure medicines matter for some agents.",
+          "counsel": "Discuss bladder training, fluid/caffeine habits and constipation management. Report inability to urinate or significant confusion."
+        },
+        {
+          "title": "Benign prostatic hyperplasia (BPH)",
+          "class": "Alpha-1 blockers; 5-alpha-reductase inhibitors",
+          "moa": "Alpha-1 blockers relax smooth muscle in prostate/bladder neck. 5-alpha-reductase inhibitors reduce dihydrotestosterone and gradually shrink prostate volume.",
+          "uses": "Lower urinary tract symptoms due to BPH; choice depends on symptom burden, prostate size and goals.",
+          "risks": "Alpha blockers can cause dizziness/orthostatic hypotension; 5-alpha-reductase inhibitors may cause sexual adverse effects and alter PSA interpretation.",
+          "interactions": "Other blood-pressure-lowering drugs and PDE5 inhibitors can increase hypotension with alpha blockers. Tell clinicians about 5-alpha-reductase inhibitor use when interpreting PSA.",
+          "counsel": "Rise slowly if dizzy. Some medicines take weeks to months for full benefit. Urinary retention or visible blood in urine needs prompt assessment."
+        }
+      ]
+    },
+    {
+      "id": "blood",
+      "name": "Nutrition & Blood",
+      "ar": "التغذية والدم",
+      "icon": "🩸",
+      "intro": "Iron, folate, vitamin B12, anaemia, anticoagulation-related considerations and nutritional supplementation.",
+      "topics": [
+        {
+          "title": "Iron therapy",
+          "class": "Oral and parenteral iron preparations",
+          "moa": "Replaces iron needed for haemoglobin synthesis and restoration of iron stores.",
+          "uses": "Iron deficiency confirmed or strongly suspected after assessing the cause; route depends on severity, absorption, tolerance and clinical setting.",
+          "risks": "Oral iron commonly causes nausea, abdominal discomfort, constipation or dark stools. Parenteral iron has infusion-specific risks and requires appropriate monitoring.",
+          "interactions": "Iron reduces absorption of levothyroxine, tetracyclines, fluoroquinolones and some other medicines; separate doses according to product-specific advice. Calcium/food may affect absorption.",
+          "counsel": "Follow the prescribed schedule and separation instructions. Keep iron away from children due to poisoning risk. Treatment and follow-up blood tests should address both haemoglobin and iron stores."
+        },
+        {
+          "title": "Vitamin B12 and folate",
+          "class": "Cobalamin and folic acid",
+          "moa": "B12 supports DNA synthesis and neurological function; folate supports nucleotide synthesis and red-cell production.",
+          "uses": "Treat documented deficiency or specific preventive indications; determine the cause of deficiency where possible.",
+          "risks": "Folate can correct the anaemia of B12 deficiency while neurological injury continues, so B12 deficiency should be considered before folate-only treatment in at-risk patients.",
+          "interactions": "Methotrexate and some antiepileptics can interact with folate pathways; high-dose folic acid decisions require indication-specific review.",
+          "counsel": "Follow-up tests and treatment duration depend on cause, severity and route. Report numbness, gait problems or cognitive changes for assessment."
+        },
+        {
+          "title": "Anaemia overview",
+          "class": "Iron deficiency, B12/folate deficiency, chronic disease and other causes",
+          "moa": "Anaemia reflects reduced haemoglobin or red-cell mass; mechanisms include impaired production, blood loss and haemolysis.",
+          "uses": "Investigate the cause rather than treating a laboratory value alone.",
+          "risks": "Empiric supplements can delay diagnosis or be inappropriate when the cause is not deficiency.",
+          "interactions": "Review medicines that cause bleeding or affect marrow; supplement interactions vary by agent.",
+          "counsel": "Symptoms such as breathlessness, chest pain, fainting, severe weakness or active bleeding require appropriate urgency of assessment."
+        }
+      ]
+    },
+    {
+      "id": "msk",
+      "name": "Musculoskeletal & Joint Diseases",
+      "ar": "الجهاز العضلي الهيكلي والمفاصل",
+      "icon": "🦴",
+      "intro": "Pain and inflammation, osteoarthritis, rheumatoid arthritis, gout and disease-modifying therapies.",
+      "topics": [
+        {
+          "title": "NSAIDs",
+          "class": "Ibuprofen, naproxen, diclofenac and related agents",
+          "moa": "Inhibit cyclo-oxygenase enzymes and reduce prostaglandin synthesis, lowering pain and inflammation.",
+          "uses": "Short-term or condition-specific pain/inflammation relief when benefits outweigh risks.",
+          "risks": "GI ulcer/bleeding, kidney injury, fluid retention, raised blood pressure and cardiovascular risk; risk varies with dose, duration and patient factors.",
+          "interactions": "Anticoagulants/antiplatelets increase bleeding risk; ACE inhibitors/ARBs plus diuretics increase kidney risk; lithium and methotrexate interactions may occur.",
+          "counsel": "Use the lowest effective dose for the shortest appropriate duration. Avoid duplicate NSAIDs and seek advice with ulcer history, kidney disease, heart failure, pregnancy or anticoagulant use."
+        },
+        {
+          "title": "DMARDs and biologics",
+          "class": "Conventional synthetic and biologic disease-modifying antirheumatic drugs",
+          "moa": "Target immune pathways to reduce inflammatory disease activity and prevent joint damage; exact targets vary widely.",
+          "uses": "Rheumatoid arthritis and other inflammatory diseases under specialist supervision.",
+          "risks": "Infection risk, blood/liver abnormalities and agent-specific toxicities. Biologics may require screening for latent infections before use.",
+          "interactions": "Avoid live vaccines with many immunosuppressive therapies; combinations of immunosuppressants increase infection risk. Methotrexate has important dosing and interaction rules.",
+          "counsel": "Keep laboratory monitoring and vaccination plans current. Fever or signs of serious infection should prompt clinical advice; do not change weekly medicines to daily dosing."
+        },
+        {
+          "title": "Gout medicines",
+          "class": "NSAIDs, colchicine, corticosteroids; urate-lowering agents",
+          "moa": "Acute therapies reduce inflammation; allopurinol/febuxostat reduce uric acid formation, while uricosurics increase urate excretion.",
+          "uses": "Treat acute flares and prevent recurrent gout according to clinical plan; urate-lowering therapy is not an immediate pain reliever.",
+          "risks": "Colchicine toxicity can be severe, especially with renal impairment or interacting medicines. Allopurinol can rarely cause severe hypersensitivity.",
+          "interactions": "Colchicine interacts with strong CYP3A4/P-gp inhibitors, especially in renal/hepatic impairment. Allopurinol interacts with azathioprine/mercaptopurine.",
+          "counsel": "Follow the flare plan and prevention plan separately. Seek urgent assessment for rash with systemic symptoms after allopurinol or severe diarrhoea/vomiting on colchicine."
+        }
+      ]
+    },
+    {
+      "id": "eye",
+      "name": "Eye",
+      "ar": "طب العيون",
+      "icon": "👁️",
+      "intro": "Eye drops and ointments, glaucoma, infection, allergy and inflammation. Technique and avoiding contamination are essential.",
+      "topics": [
+        {
+          "title": "Eye drop and ointment technique",
+          "class": "Administration and counselling",
+          "moa": "Correct technique places the medicine on the ocular surface while limiting contamination and systemic absorption.",
+          "uses": "Applies to most topical ocular preparations; specific instructions may differ by product.",
+          "risks": "Touching the dropper to the eye can contaminate the product. Blurred vision may occur briefly with ointments.",
+          "interactions": "Multiple drops can wash each other out; follow product-specific spacing and order advice. Punctal occlusion may reduce systemic absorption for some drops.",
+          "counsel": "Wash hands; pull down lower lid; place the drop without touching the eye; close eye gently and press the inner corner briefly when appropriate. The source guide advises discarding opened drops/ointments after four weeks, but always follow the specific product label."
+        },
+        {
+          "title": "Ocular anti-infectives",
+          "class": "Antibacterial, antiviral and selected antifungal therapies",
+          "moa": "Agent-specific inhibition or killing of susceptible pathogens; viral and fungal eye disease require different management.",
+          "uses": "Selected bacterial or viral ocular infections after assessment; suspected corneal infection may require urgent specialist care.",
+          "risks": "Irritation or allergy; unnecessary antibiotics can delay correct diagnosis. Topical corticosteroids can worsen some infections and should not be self-started.",
+          "interactions": "Avoid sharing eye products; contact lens use and other drops affect management and timing.",
+          "counsel": "Eye pain, photophobia, reduced vision, corneal injury, contact lens-associated red eye or chemical exposure need urgent assessment."
+        },
+        {
+          "title": "Ocular corticosteroids and anti-inflammatory drugs",
+          "class": "Topical corticosteroids, NSAIDs, mast-cell stabilisers and antihistamines",
+          "moa": "Steroids suppress ocular inflammation; NSAIDs inhibit prostaglandin synthesis; antihistamines/mast-cell stabilisers reduce allergic symptoms.",
+          "uses": "Selected inflammatory or allergic eye conditions under appropriate guidance.",
+          "risks": "Topical ocular steroids may raise intraocular pressure and contribute to cataract with prolonged use; NSAID drops may be unsuitable in NSAID hypersensitivity.",
+          "interactions": "Steroid/anti-infective combinations require a clear indication. Check concurrent systemic NSAIDs and allergy history.",
+          "counsel": "Do not use steroid eye drops without a clinician’s direction. Follow-up may be needed to monitor eye pressure."
+        }
+      ]
+    },
+    {
+      "id": "ent",
+      "name": "Ear, Nose & Oropharynx",
+      "ar": "الأذن والأنف والبلعوم",
+      "icon": "👂",
+      "intro": "Ear wax, otitis media, allergic rhinitis, nasal decongestants, sore throat and local preparations.",
+      "topics": [
+        {
+          "title": "Ear drops and cerumenolytics",
+          "class": "Ear drops, wax-softening preparations",
+          "moa": "Wax-softeners hydrate or loosen cerumen; ear drops deliver local treatment to the ear canal.",
+          "uses": "Selected earwax and ear conditions after checking for perforation, tubes, surgery or infection concerns.",
+          "risks": "Irritation; unsuitable drops can harm if the tympanic membrane is perforated. Cotton swabs can push wax deeper or injure the canal.",
+          "interactions": "Interactions are usually limited for local agents but depend on ingredient and absorption.",
+          "counsel": "Wash hands, warm bottle in the hand, position affected ear upward and remain tilted for several minutes. The source guide discourages cotton-tipped swabs for wax removal."
+        },
+        {
+          "title": "Allergic rhinitis",
+          "class": "Intranasal corticosteroids, antihistamines, saline and selected decongestants",
+          "moa": "Steroids suppress nasal inflammation; antihistamines block H1 receptors; saline helps moisturise and clear secretions.",
+          "uses": "Sneezing, itching, runny nose and congestion due to allergy; selection depends on symptom pattern and age.",
+          "risks": "Nasal irritation/epistaxis with sprays; oral antihistamines may sedate; topical decongestants can cause rebound congestion if overused.",
+          "interactions": "Sedating antihistamines add to CNS depressants. Check duplicate ingredients in cold remedies.",
+          "counsel": "Use nasal spray consistently and direct it away from the septum. The source guide notes peak intranasal steroid response can take 2–3 weeks and topical decongestants should be short term."
+        },
+        {
+          "title": "Acute otitis media",
+          "class": "Analgesics and selected antibiotics",
+          "moa": "Pain relief treats symptoms; antibiotics target susceptible bacterial causes when treatment is indicated.",
+          "uses": "Many cases improve over several days; immediate antibiotics are reserved for selected patients based on severity, risk and guidelines.",
+          "risks": "Antibiotic adverse effects and resistance; pain and fever can affect feeding and sleep in children.",
+          "interactions": "Use age/weight-appropriate medicines and check duplicate analgesic ingredients; antibiotic interactions depend on the selected agent.",
+          "counsel": "Provide appropriate pain relief and safety-net advice. Systemically unwell children, serious symptoms, complications risk or worsening need prompt assessment; follow current local paediatric guidance."
+        }
+      ]
+    },
+    {
+      "id": "skin",
+      "name": "Skin & Dermatology",
+      "ar": "الجلدية",
+      "icon": "🧴",
+      "intro": "Topical formulations, bacterial/fungal skin infections, acne, eczema, psoriasis and safe use of corticosteroids.",
+      "topics": [
+        {
+          "title": "Topical vehicles and formulation choice",
+          "class": "Creams, ointments, lotions, gels, solutions and collodions",
+          "moa": "Vehicle influences hydration, penetration, spreadability and acceptability; the active drug and vehicle both affect response.",
+          "uses": "Choose according to lesion site, dryness/wetness, hair, folds, severity and patient preference.",
+          "risks": "Greasy ointments may be unsuitable cosmetically or trap heat in folds; some vehicles irritate sensitive skin. Avoid unsuitable preparations on broken or infected skin unless directed.",
+          "interactions": "Occlusion can increase topical corticosteroid absorption; using multiple products may cause irritation or alter application.",
+          "counsel": "Apply a thin, appropriate amount to the intended area and follow the product directions. Do not share topical medicines; wash hands unless hands are the treatment site."
+        },
+        {
+          "title": "Topical antibacterials",
+          "class": "Mupirocin, fusidic acid and other local agents",
+          "moa": "Different agents inhibit bacterial protein synthesis or other essential bacterial processes.",
+          "uses": "Selected superficial bacterial skin infections; deeper infections such as cellulitis often require systemic assessment/treatment.",
+          "risks": "Local irritation/allergy and antimicrobial resistance with unnecessary or prolonged use.",
+          "interactions": "Avoid unreviewed duplicate topical products; systemic interactions are usually limited but depend on agent and extent of use.",
+          "counsel": "Use only for the prescribed indication and duration. Worsening redness, spreading warmth, fever or severe pain requires assessment."
+        },
+        {
+          "title": "Topical antifungals",
+          "class": "Azoles, terbinafine, nystatin and other agents",
+          "moa": "Target fungal membrane synthesis or integrity; spectrum differs by agent.",
+          "uses": "Localised fungal infections; scalp, nail, widespread or refractory disease may need clinician assessment and systemic therapy.",
+          "risks": "Local irritation; systemic agents carry additional liver and interaction risks.",
+          "interactions": "Systemic azoles have substantial interaction potential; check specific product and concurrent medicines.",
+          "counsel": "Use the correct product for the site and continue for the recommended duration. The source guide advises continuing local treatment for 1–2 weeks after visible signs disappear; follow the specific current product directions."
+        },
+        {
+          "title": "Topical corticosteroids",
+          "class": "Low, moderate, potent and very potent topical steroids",
+          "moa": "Reduce inflammatory gene expression and immune activity in skin.",
+          "uses": "Eczema and other inflammatory dermatoses when the diagnosis and potency/site are appropriate.",
+          "risks": "Skin thinning, striae, telangiectasia and systemic absorption, especially with potent products, large areas, prolonged use, face/folds or occlusion.",
+          "interactions": "Occlusive dressings and other steroid routes increase total exposure. Infection may be masked or worsened.",
+          "counsel": "Use the prescribed potency, quantity, site and duration. Extra caution is required on the face, skin folds and in children."
+        }
+      ]
+    },
+    {
+      "id": "dosage",
+      "name": "Dosage Forms & Patient Counseling",
+      "ar": "الأشكال الصيدلانية وإرشاد المريض",
+      "icon": "💊",
+      "intro": "Practical administration techniques drawn from the supplied Summer Training Guide: ear/nasal/eye preparations and respiratory delivery devices.",
+      "topics": [
+        {
+          "title": "Ear drops and sprays",
+          "class": "Administration technique",
+          "moa": "Correct positioning helps the medicine reach the ear canal and limits loss.",
+          "uses": "For prescribed ear preparations when the product is appropriate for the patient’s ear condition.",
+          "risks": "Cold drops can cause discomfort; contaminated tips or use with an eardrum problem can be unsafe.",
+          "interactions": "Check whether the product is a suspension requiring shaking and verify whether it is suitable if perforation or ear tubes are present.",
+          "counsel": "Wash hands; warm bottle in the hand; lie with affected ear up; gently pull adult ear upward/backward (for children under 3, backward/downward per source guide); instil as directed and remain tilted about five minutes; recap."
+        },
+        {
+          "title": "Nasal drops and sprays",
+          "class": "Administration technique",
+          "moa": "Technique improves deposition on nasal mucosa and reduces swallowing/runoff.",
+          "uses": "Prescribed nasal preparations including saline, steroids and decongestants.",
+          "risks": "Hard sniffing may draw spray into throat; prolonged topical decongestant use can cause rebound congestion.",
+          "interactions": "Product-specific. Avoid duplicate active ingredients in combination cold medicines.",
+          "counsel": "Clear nose gently and wash hands. For spray, tilt head slightly forward, aim nozzle away from septum, breathe in gently while spraying, and avoid forceful sniffing. Follow age-specific product directions."
+        },
+        {
+          "title": "Eye drops and ointments",
+          "class": "Administration technique",
+          "moa": "Correct technique delivers medication to conjunctival sac and reduces contamination/systemic drainage.",
+          "uses": "Most topical ocular products, with product-specific instructions.",
+          "risks": "Dropper-tip contamination, transient blurred vision with ointments, and avoidable systemic absorption.",
+          "interactions": "Allow appropriate spacing between different drops; follow clinician/product instructions for sequence and contact lenses.",
+          "counsel": "Wash hands; pull lower lid down; put one drop into the pocket without touching the eye; close gently and press inner corner for about 30 seconds when appropriate; recap. Follow label for discard-after-opening period."
+        },
+        {
+          "title": "Metered-dose inhaler and spacer",
+          "class": "Respiratory drug delivery devices",
+          "moa": "The device aerosolises medicine; a spacer holds the aerosol briefly and can improve delivery/coordination.",
+          "uses": "Inhaled medicines for asthma/COPD when prescribed and appropriate for the patient.",
+          "risks": "Poor technique reduces dose reaching the lungs; poor cleaning or failure to use prescribed spacer may affect delivery.",
+          "interactions": "Device technique is not a pharmacological interaction, but correct device choice affects delivered dose.",
+          "counsel": "Remove cap and check mouthpiece; shake if instructed; breathe out; seal lips; press once while inhaling slowly and deeply, then hold breath if able. With a spacer, follow device instructions and inhale promptly or take the recommended tidal breaths. Rinse mouth after inhaled corticosteroids."
+        }
+      ]
+    }
+  ],
+  "references": [
+    "Supplied source: Summer Training Guide for Third Stage Pharmacy Students (uploaded PDF). Its reference list includes BNF 81 (2021), DiPiro Pharmacotherapy: A Pathophysiologic Approach (11th ed., 2021), Clinical Pharmacy and Therapeutics (6th ed., 2019), Pharmacotherapy Principles & Practice (5th ed., 2019), Martindale (38th ed., 2014), and other sources.",
+    "Important: the uploaded guide is a training text with older references in places. Verify medicine-specific details against current local guidelines, product information, and an up-to-date formulary before clinical use.",
+    "Educational resource only; not a substitute for clinician judgement, local protocols, or emergency care. Drug choice, doses, contraindications, and monitoring are patient-specific."
+  ]
+}
