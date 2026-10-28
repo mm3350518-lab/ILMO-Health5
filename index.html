@@ -1,53 +1,178 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0d1b2a">
-<title>ILMO Health | Scientific Library</title>
+<title>ILMO Health</title>
+
 <style>
-:root{--bg:#f3f6fb;--panel:#fff;--ink:#152336;--muted:#637287;--brand:#0b766e;--brand2:#d9f2ed;--line:#e2e8f0;--warn:#fff4d8}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}header{background:linear-gradient(125deg,#0d1b2a,#134e5e);color:white;padding:25px 18px 22px}header .wrap,main{max-width:1180px;margin:auto}header h1{margin:0;font-size:clamp(25px,4vw,36px);letter-spacing:-.5px}header p{margin:6px 0 0;color:#d5e8ee}.tag{display:inline-block;background:#ffffff1c;border:1px solid #ffffff33;border-radius:999px;padding:3px 10px;font-size:12px;margin-bottom:9px}
-main{padding:18px;display:grid;grid-template-columns:290px 1fr;gap:18px}.panel,.content{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 18px #18324b08}.sidebar{padding:14px;align-self:start;position:sticky;top:12px}.search{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-bottom:12px}.nav{display:grid;gap:5px;max-height:66vh;overflow:auto}.nav button{display:flex;gap:10px;align-items:center;text-align:left;width:100%;border:0;background:transparent;padding:10px;border-radius:10px;color:var(--ink);font:inherit;cursor:pointer}.nav button.active,.nav button:hover{background:var(--brand2);color:#075e57}.nav .ico{font-size:20px;width:28px;text-align:center}.content{padding:clamp(16px,3vw,30px);min-width:0}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.btn{border:1px solid var(--line);border-radius:9px;background:#fff;padding:8px 12px;font:inherit;cursor:pointer;color:var(--ink)}.btn.primary{background:var(--brand);border-color:var(--brand);color:white}.btn.saved{background:var(--brand2);border-color:#9bd7cb}.stats{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.stat{background:#f7fafc;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;color:var(--muted)}h2{font-size:28px;line-height:1.25;margin:4px 0}h3{margin:0 0 8px;font-size:19px}h4{margin:12px 0 3px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--brand)}.intro{color:var(--muted);margin:8px 0 18px}.topic{border:1px solid var(--line);border-radius:13px;padding:17px;margin:12px 0;background:#fff}.topic-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.class{font-size:13px;color:var(--muted);margin-top:2px}.topic p{margin:4px 0 10px}.topic .cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}.topic .field{border-top:1px solid #eef2f6;padding-top:7px}.topic .field p{font-size:14px;margin:0}.pill{font-size:12px;border-radius:99px;background:#eef6f7;color:#17635d;padding:4px 8px;white-space:nowrap}.warning{background:var(--warn);padding:13px;border-radius:10px;font-size:13px;margin:16px 0}.refs{padding:15px;background:#f7fafc;border-radius:12px;color:var(--muted);font-size:13px}.empty{padding:35px;text-align:center;color:var(--muted)}.hidden{display:none!important}.footer{max-width:1180px;margin:0 auto 25px;padding:0 18px;color:var(--muted);font-size:12px}.mobilehead{display:none}
-@media(max-width:820px){main{grid-template-columns:1fr;padding:10px}.sidebar{position:static}.nav{display:flex;overflow-x:auto;max-height:none;padding-bottom:3px}.nav button{min-width:max-content;width:auto}.content{padding:15px}.topic .cols{grid-template-columns:1fr}.mobilehead{display:block}.stats{gap:6px}.stat{font-size:12px}}
-@media print{header{background:#fff;color:#000;border-bottom:2px solid #333}header p{color:#333}main{display:block;padding:0}.sidebar,.toolbar,.footer{display:none!important}.content,.topic{box-shadow:none;break-inside:avoid}.topic{border:1px solid #aaa}.warning{border:1px solid #aaa}}
-</style></head>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #152536;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d1b2a, #14515b);
+  color: white;
+  padding: 35px 20px;
+  border-radius: 0 0 28px 28px;
+}
+
+.brand {
+  display: inline-block;
+  padding: 9px 14px;
+  border: 1px solid #ffffff45;
+  border-radius: 30px;
+  color: #c6f7ed;
+  font-size: 13px;
+}
+
+.hero h1 {
+  margin: 24px 0 10px;
+  font-size: 32px;
+}
+
+.hero p {
+  margin: 0;
+  line-height: 1.8;
+  color: #d4e5ec;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  padding: 22px 16px;
+}
+
+.section-title {
+  margin: 8px 0 16px;
+  font-size: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 155px;
+  padding: 19px 15px;
+  text-decoration: none;
+  color: #152536;
+  background: white;
+  border: 1px solid #e0e8ee;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px #10203009;
+  transition: transform 0.2s;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+  background: #e0f5f1;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.card p {
+  margin: 0;
+  color: #68798a;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer {
+  padding: 24px 10px;
+  text-align: center;
+  color: #778695;
+  font-size: 12px;
+}
+
+@media (max-width: 350px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+}
+</style>
+</head>
+
 <body>
-<header><div class="wrap"><span class="tag">ILMO HEALTH · STUDENT REFERENCE</span><h1>Scientific Library</h1><p>Organised pharmacology learning notes · mechanisms · uses · risks · interactions · counselling</p></div></header>
-<main>
-<aside class="panel sidebar">
-<input id="search" class="search" placeholder="Search drug, class, mechanism..." aria-label="Search library">
-<div class="nav" id="nav"></div>
-<div class="stats"><div class="stat" id="topicCount">0 topics</div><div class="stat" id="savedCount">0 saved</div></div>
-<button class="btn" id="showSaved" style="width:100%">★ Show saved topics</button>
-</aside>
-<section class="content">
-<div class="toolbar"><button class="btn primary" id="allBtn">All sections</button><button class="btn" id="printBtn">Print / Save PDF</button><button class="btn" id="exportBtn">Export notes & progress</button><label class="btn" for="importFile">Import backup</label><input class="hidden" id="importFile" type="file" accept="application/json"></div>
-<div id="view"></div>
-</section>
+
+<header class="hero">
+  <div class="brand">STUDENT PHARMACY REFERENCE</div>
+  <h1>ILMO Health</h1>
+  <p>
+    مرجعك العلمي لدراسة الصيدلة
+    <br>
+    الأدوية · الحالات السريرية · المادة العلمية
+  </p>
+</header>
+
+<main class="container">
+  <h2 class="section-title">أقسام التطبيق</h2>
+
+  <div class="cards">
+
+    <a class="card" href="drugs.html">
+      <div class="icon">💊</div>
+      <h2>الأدوية</h2>
+      <p>معلومات الأدوية وتصنيفاتها وآليات عملها.</p>
+    </a>
+
+    <a class="card" href="cases.html">
+      <div class="icon">🩺</div>
+      <h2>الحالات السريرية</h2>
+      <p>حالات تدريبية وأسئلة للمراجعة.</p>
+    </a>
+
+    <a class="card" href="scientific-library/index.html">
+      <div class="icon">📚</div>
+      <h2>المادة العلمية</h2>
+      <p>شروحات علمية منظمة حسب الموضوعات.</p>
+    </a>
+
+    <a class="card" href="programmers.html">
+      <div class="icon">👨‍💻</div>
+      <h2>قائمة المبرمجين</h2>
+      <p>التعريف بفريق إنتاج وبرمجة البرنامج ومساعدة الطلاب.</p>
+    </a>
+
+  </div>
 </main>
-<div class="footer">ILMO Health educational library. Verify current guidance and the exact product information before clinical use. Saved topics, notes and progress stay in this browser unless exported.</div>
-<script>
-const DATA_URL='library-data.json';
-let data,activeId=null,onlySaved=false;
-const storeKey='ilmo-scientific-library-v1';
-let state={saved:[],notes:{},done:[]};
-try{state=Object.assign(state,JSON.parse(localStorage.getItem(storeKey)||'{}'))}catch(e){}
-const $=s=>document.querySelector(s);
-function persist(){localStorage.setItem(storeKey,JSON.stringify(state));renderNav();updateStats()}
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function updateStats(){if(!data)return;let n=data.modules.reduce((a,m)=>a+m.topics.length,0);$('#topicCount').textContent=n+' topics';$('#savedCount').textContent=state.saved.length+' saved'}
-function renderNav(){if(!data)return;let q=$('#search').value.trim().toLowerCase();$('#nav').innerHTML=data.modules.filter(m=>!q||(m.name+' '+m.ar+' '+m.topics.map(t=>t.title+' '+t.class+' '+t.moa+' '+t.uses).join(' ')).toLowerCase().includes(q)).map(m=>`<button class="${m.id===activeId?'active':''}" data-id="${m.id}"><span class="ico">${m.icon}</span><span>${esc(m.name)}</span></button>`).join('');$('#nav').querySelectorAll('button').forEach(b=>b.onclick=()=>{onlySaved=false;activeId=b.dataset.id;renderNav();renderView()})}
-function topicHtml(m,t,i){let key=m.id+'::'+i, saved=state.saved.includes(key),done=state.done.includes(key);return `<article class="topic" id="${esc(key)}"><div class="topic-top"><div><h3>${esc(t.title)}</h3><div class="class">${esc(t.class)}</div></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><span class="pill">${done?'✓ Reviewed':'Study topic'}</span><button class="btn ${saved?'saved':''}" data-save="${esc(key)}">${saved?'★ Saved':'☆ Save'}</button><button class="btn" data-done="${esc(key)}">${done?'Mark unreviewed':'Mark reviewed'}</button></div></div><div class="cols">${[['Mechanism of action',t.moa],['Indications / clinical use',t.uses],['Adverse effects / cautions',t.risks],['Interactions',t.interactions],['Patient counselling',t.counsel]].map(([h,p])=>`<div class="field"><h4>${h}</h4><p>${esc(p)}</p></div>`).join('')}</div><div class="field"><h4>My study notes</h4><textarea data-note="${esc(key)}" rows="2" placeholder="Write your own notes or questions..." style="width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;font:inherit">${esc(state.notes[key]||'')}</textarea></div></article>`}
-function renderView(){if(!data)return;let q=$('#search').value.trim().toLowerCase();let modules=activeId?data.modules.filter(m=>m.id===activeId):data.modules;let html='';let total=0;
-for(const m of modules){let ts=m.topics.map((t,i)=>({t,i})).filter(({t,i})=>{let key=m.id+'::'+i;return (!onlySaved||state.saved.includes(key))&&(!q||(m.name+' '+m.ar+' '+t.title+' '+t.class+' '+t.moa+' '+t.uses+' '+t.risks+' '+t.interactions+' '+t.counsel).toLowerCase().includes(q))});if(!ts.length)continue;total+=ts.length;html+=`<div><div style="font-size:12px;color:var(--brand);font-weight:700;letter-spacing:.08em;text-transform:uppercase">${m.icon} ${esc(m.ar)}</div><h2>${esc(m.name)}</h2><p class="intro">${esc(m.intro)}</p>${ts.map(({t,i})=>topicHtml(m,t,i)).join('')}</div>`}
-if(!html)html='<div class="empty">No matching topics. Try a different search term or turn off “Show saved topics”.</div>';
-if(!activeId&&!q&&!onlySaved)html+=`<div class="refs"><h3>Reference notes</h3><ul>${data.references.map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div>`;
-$('#view').innerHTML=html;$('#view').querySelectorAll('[data-save]').forEach(b=>b.onclick=()=>{let k=b.dataset.save;state.saved=state.saved.includes(k)?state.saved.filter(x=>x!==k):[...state.saved,k];persist();renderView()});$('#view').querySelectorAll('[data-done]').forEach(b=>b.onclick=()=>{let k=b.dataset.done;state.done=state.done.includes(k)?state.done.filter(x=>x!==k):[...state.done,k];persist();renderView()});$('#view').querySelectorAll('[data-note]').forEach(t=>t.onchange=()=>{state.notes[t.dataset.note]=t.value;persist()});}
-$('#search').addEventListener('input',()=>{activeId=null;onlySaved=false;renderNav();renderView()});
-$('#allBtn').onclick=()=>{activeId=null;onlySaved=false;renderNav();renderView()};
-$('#showSaved').onclick=()=>{onlySaved=!onlySaved;activeId=null;$('#showSaved').textContent=onlySaved?'★ Showing saved — click to show all':'★ Show saved topics';renderNav();renderView()};
-$('#printBtn').onclick=()=>window.print();
-$('#exportBtn').onclick=()=>{let b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ilmo-library-backup.json';a.click();URL.revokeObjectURL(a.href)};
-$('#importFile').onchange=async e=>{try{let f=e.target.files[0];if(!f)return;let s=JSON.parse(await f.text());if(!s||!Array.isArray(s.saved)||!s.notes)throw Error();state=Object.assign({saved:[],notes:{},done:[]},s);persist();renderView();alert('Backup imported')}catch(err){alert('Invalid backup file')}};
-fetch(DATA_URL).then(r=>{if(!r.ok)throw Error('missing data');return r.json()}).then(d=>{data=d;renderNav();renderView();updateStats()}).catch(()=>{$('#view').innerHTML='<div class="empty">Could not load library-data.json. Keep index.html and library-data.json in the same folder.</div>'});
-</script></body></html>
+
+<footer class="footer">
+  ILMO Health · Student Reference
+</footer>
+
+</body>
+</html>
