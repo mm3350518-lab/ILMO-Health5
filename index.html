@@ -2,313 +2,195 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#102a43">
-<title>صيدليتي</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b35">
+  <title>ILMO Health | صيدليتي</title>
 
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: Tahoma, Arial, sans-serif;
-  background: #f2f6fb;
-  color: #172b4d;
-  min-height: 100vh;
-}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Tahoma, sans-serif;
+      background: linear-gradient(145deg, #0b2029, #163b46);
+      color: #ffffff;
+    }
 
-.container {
-  max-width: 850px;
-  margin: auto;
-  padding: 18px;
-}
+    header {
+      padding: 35px 20px 25px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.15);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
 
-.header {
-  background: linear-gradient(135deg, #102a43, #1b4965);
-  color: white;
-  border-radius: 24px;
-  padding: 28px 22px;
-  box-shadow: 0 10px 28px #102a4320;
-}
+    .logo {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 22px;
+      background: #d7b879;
+      color: #102b35;
+      font-size: 35px;
+      font-weight: bold;
+    }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+    h1 {
+      margin: 0 0 10px;
+      font-size: 29px;
+      letter-spacing: 1px;
+    }
 
-.logo {
-  width: 60px;
-  height: 60px;
-  background: #20b8a6;
-  border-radius: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 34px;
-  color: #102a43;
-}
+    header p {
+      margin: 0;
+      color: #c4d5d9;
+      font-size: 15px;
+      line-height: 1.8;
+    }
 
-.header h1 {
-  font-size: 29px;
-  margin-bottom: 8px;
-}
+    main {
+      width: 100%;
+      max-width: 650px;
+      margin: auto;
+      padding: 25px 18px;
+    }
 
-.header p {
-  color: #d5e5ef;
-  font-size: 13px;
-  line-height: 1.8;
-}
+    .welcome {
+      margin-bottom: 22px;
+      text-align: center;
+    }
 
-.welcome {
-  margin: 27px 3px 20px;
-}
+    .welcome h2 {
+      color: #e5c98f;
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
 
-.welcome h2 {
-  font-size: 22px;
-  margin-bottom: 9px;
-}
+    .welcome p {
+      color: #c4d5d9;
+      font-size: 14px;
+      line-height: 1.8;
+    }
 
-.welcome p {
-  color: #718096;
-  line-height: 1.8;
-  font-size: 14px;
-}
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 15px;
-}
+    .menu-card {
+      display: flex;
+      min-height: 155px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(215,184,121,0.35);
+      border-radius: 18px;
+      transition: transform 0.2s, background 0.2s;
+    }
 
-.card {
-  background: white;
-  border: 1px solid #e2eaf2;
-  border-radius: 21px;
-  padding: 20px 15px;
-  min-height: 150px;
-  text-align: right;
-  cursor: pointer;
-  font-family: inherit;
-  color: inherit;
-  box-shadow: 0 5px 18px #102a4308;
-  transition: .2s;
-}
+    .menu-card:active {
+      transform: scale(0.97);
+      background: rgba(215,184,121,0.16);
+    }
 
-.card:active {
-  transform: scale(.97);
-}
+    .menu-icon {
+      font-size: 36px;
+    }
 
-.card:hover {
-  border-color: #20b8a6;
-  box-shadow: 0 8px 24px #102a4312;
-}
+    .menu-card h3 {
+      margin: 0;
+      color: #e5c98f;
+      font-size: 18px;
+    }
 
-.icon {
-  width: 53px;
-  height: 53px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  font-size: 28px;
-  margin-bottom: 14px;
-}
+    .menu-card p {
+      margin: 0;
+      color: #c4d5d9;
+      font-size: 12px;
+      line-height: 1.7;
+    }
 
-.blue { background: #e8f0ff; }
-.green { background: #e2faf4; }
-.orange { background: #fff0dd; }
-.purple { background: #f0e9ff; }
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #9fb4ba;
+      font-size: 12px;
+      line-height: 1.8;
+    }
 
-.card h3 {
-  font-size: 17px;
-  margin-bottom: 9px;
-}
+    @media (max-width: 350px) {
+      .menu {
+        grid-template-columns: 1fr;
+      }
 
-.card p {
-  font-size: 12px;
-  color: #718096;
-  line-height: 1.9;
-}
-
-.content {
-  margin-top: 20px;
-  padding: 22px;
-  background: white;
-  border: 1px solid #e2eaf2;
-  border-radius: 20px;
-  display: none;
-  line-height: 2;
-}
-
-.content.active {
-  display: block;
-}
-
-.content h2 {
-  margin-bottom: 12px;
-  font-size: 21px;
-}
-
-.content p {
-  color: #62748a;
-  font-size: 14px;
-}
-
-.back {
-  background: #102a43;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  padding: 11px 22px;
-  margin-top: 17px;
-  font-family: inherit;
-  cursor: pointer;
-}
-
-.footer {
-  text-align: center;
-  color: #8795a7;
-  font-size: 12px;
-  padding: 25px 10px;
-}
-
-@media (max-width: 420px) {
-  .container {
-    padding: 12px;
-  }
-
-  .header {
-    padding: 22px 15px;
-  }
-
-  .header h1 {
-    font-size: 25px;
-  }
-
-  .grid {
-    gap: 10px;
-  }
-
-  .card {
-    padding: 15px 12px;
-    min-height: 145px;
-  }
-}
-</style>
+      .menu-card {
+        min-height: 125px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="container">
-
-  <header class="header">
-    <div class="brand">
-      <div class="logo">⚕</div>
-      <div>
-        <h1>صيدليتي</h1>
-        <p>منصتك التعليمية لمراجعة الأدوية والحالات السريرية</p>
-      </div>
-    </div>
+  <header>
+    <div class="logo">+</div>
+    <h1>ILMO Health</h1>
+    <p>صيدليتي — منصتك التعليمية في العلوم الصيدلانية</p>
   </header>
 
-  <section class="welcome">
-    <h2>أهلاً بك 👋</h2>
-    <p>اختَر القسم الذي تريد الدخول إليه وواصل رحلتك التعليمية.</p>
-  </section>
+  <main>
+    <section class="welcome">
+      <h2>أهلاً بك في صيدليتي</h2>
+      <p>
+        تعلّم، راجع معلوماتك، وتدرّب على الحالات السريرية
+        من خلال واجهة واحدة سهلة الاستخدام.
+      </p>
+    </section>
 
-  <main class="grid">
+    <section class="menu">
 
-    <button class="card" onclick="openSection('progress')">
-      <div class="icon blue">📈</div>
-      <h3>التقدّم</h3>
-      <p>تابع إنجازك والموضوعات التي أكملتها.</p>
-    </button>
+      <a class="menu-card" href="progress.html">
+        <span class="menu-icon">📊</span>
+        <h3>التقدّم</h3>
+        <p>تابع مسيرتك التعليمية</p>
+      </a>
 
-    <button class="card" onclick="openSection('medications')">
-      <div class="icon green">💊</div>
-      <h3>الأدوية</h3>
-      <p>مراجعة الأدوية ومعلوماتها وتصنيفاتها.</p>
-    </button>
+      <a class="menu-card" href="drugs.html">
+        <span class="menu-icon">💊</span>
+        <h3>الأدوية</h3>
+        <p>راجع معلومات الأدوية</p>
+      </a>
 
-    <button class="card" onclick="openSection('cases')">
-      <div class="icon orange">🩺</div>
-      <h3>الكيسات السريرية</h3>
-      <p>تدرّب على الحالات والأسئلة التطبيقية.</p>
-    </button>
+      <a class="menu-card" href="cases.html">
+        <span class="menu-icon">🩺</span>
+        <h3>الكيسات السريرية</h3>
+        <p>تدرّب على الحالات الطبية</p>
+      </a>
 
-    <button class="card" onclick="openSection('developers')">
-      <div class="icon purple">👨‍💻</div>
-      <h3>المبرمجون</h3>
-      <p>التعرّف على فريق تطوير التطبيق.</p>
-    </button>
+      <a class="menu-card" href="programmers.html">
+        <span class="menu-icon">👨‍💻</span>
+        <h3>المبرمجون</h3>
+        <p>تعرّف على فريق تطوير التطبيق</p>
+      </a>
 
+    </section>
   </main>
 
-  <section class="content" id="content">
-    <h2 id="sectionTitle"></h2>
-    <p id="sectionDescription"></p>
-    <button class="back" onclick="closeSection()">رجوع</button>
-  </section>
-
-  <footer class="footer">
-    صيدليتي | منصة تعليمية للصيدلة
+  <footer>
+    ILMO Health<br>
+    منصة تعليمية للمساعدة في دراسة العلوم الصيدلانية
   </footer>
-
-</div>
-
-<script>
-const sections = {
-  progress: {
-    title: "التقدّم",
-    description:
-      "هنا تظهر متابعة تقدمك والموضوعات التي أكملتها. يمكن ربط هذا القسم بنظام حفظ التقدم الموجود في التطبيق."
-  },
-
-  medications: {
-    title: "الأدوية",
-    description:
-      "قسم مراجعة الأدوية ومعلوماتها واستعمالاتها وتصنيفاتها ومصادرها العلمية الموثوقة."
-  },
-
-  cases: {
-    title: "الكيسات السريرية",
-    description:
-      "قسم الحالات السريرية التدريبية والأسئلة التفاعلية مع الشرح والإجابات."
-  },
-
-  developers: {
-    title: "المبرمجون",
-    description:
-      "تطوير التطبيق: أضف أسماء المبرمجين ومعلومات فريق العمل هنا."
-  }
-};
-
-function openSection(section) {
-  const data = sections[section];
-
-  document.getElementById("sectionTitle").textContent =
-    data.title;
-
-  document.getElementById("sectionDescription").textContent =
-    data.description;
-
-  document.getElementById("content").classList.add("active");
-
-  document.getElementById("content").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
-
-function closeSection() {
-  document.getElementById("content").classList.remove("active");
-}
-</script>
-
 </body>
 </html>
