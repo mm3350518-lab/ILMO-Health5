@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#087fa8">
+<title>ILMO Health | صيدليتي</title>
+<style>
+:root{--blue:#087fa8;--cyan:#20b8d5;--ink:#163746;--muted:#68818b;--bg:#f0f9fc;--line:#d9edf2;--white:#fff}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+#splash{position:fixed;inset:0;z-index:99;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity .35s ease}
+#splash img{width:100%;height:100%;object-fit:contain;background:#fff}
+#splash.hide{opacity:0;pointer-events:none}
+.wrap{max-width:980px;margin:auto;padding:0 15px}
+.hero{background:linear-gradient(135deg,#076b91,#20b8d5);color:#fff;padding:25px 0 24px;border-radius:0 0 28px 28px}
+.brand{display:flex;align-items:center;gap:12px}.brandmark{width:54px;height:54px;object-fit:contain;background:#ffffff22;border:1px solid #ffffff55;border-radius:16px;padding:5px}
+h1{font-size:25px;margin:0}.hero p{margin:5px 0 0;opacity:.94;font-size:14px}
+.welcome{margin-top:22px;padding:17px;background:#ffffff1c;border:1px solid #ffffff3d;border-radius:18px}
+.welcome h2{margin:0 0 4px;font-size:19px}.welcome p{margin:0;line-height:1.8}
+main{padding:20px 0 95px}.section-head{display:flex;justify-content:space-between;align-items:center;margin:3px 0 13px}.section-head h2{font-size:19px;margin:0}.section-head span{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{appearance:none;text-align:right;border:1px solid var(--line);border-radius:18px;padding:16px 14px;background:#fff;box-shadow:0 4px 15px #154e6009;color:var(--ink);font:inherit;min-height:145px;cursor:pointer;display:flex;flex-direction:column;gap:8px;transition:transform .15s,border-color .15s}
+.tile:active{transform:scale(.98)}.tile .ico{width:45px;height:45px;display:grid;place-items:center;border-radius:14px;background:#e4f7fb;font-size:24px}.tile strong{font-size:16px}.tile small{font-size:12px;color:var(--muted);line-height:1.6}
+.tile.featured{border-color:#8fd9e7;background:linear-gradient(180deg,#fff,#f5fdff)}
+.notice{margin-top:18px;background:#fff8e5;border:1px solid #f0dfaa;color:#6b5719;border-radius:14px;padding:12px;font-size:12px;line-height:1.8}
+.panel{display:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:18px}.panel.active{display:block}.panel h2{margin:0 0 10px;font-size:19px}.panel p,.panel li{font-size:14px;line-height:1.9}.panel a{color:var(--blue);font-weight:bold}.panel button{border:0;border-radius:11px;background:var(--blue);color:#fff;padding:10px 15px;font:inherit;cursor:pointer}
+footer{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;border-top:1px solid var(--line);padding:10px max(14px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom));display:flex;justify-content:space-around;backdrop-filter:blur(12px)}
+footer button{border:0;background:none;color:var(--muted);font:inherit;font-size:12px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer}footer b{font-size:21px;font-weight:normal}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tile{min-height:155px}.hero{padding-top:30px}}
+</style>
+</head>
+<body>
+<div id="splash" aria-label="شاشة بداية التطبيق"><img src="splash.png" alt="ILMO Health"></div>
+<header class="hero"><div class="wrap">
+<div class="brand"><img class="brandmark" src="splash.png" alt=""><div><h1>ILMO Health</h1><p>صيدليتي · رفيقك في التعلّم الصيدلاني</p></div></div>
+<div class="welcome"><h2>أهلاً بيك 👋</h2><p>تعلم، راجع معلوماتك الدوائية، وتابع تقدمك الدراسي من مكان واحد.</p></div>
+</div></header>
+<main class="wrap">
+<div class="section-head"><h2>الأقسام الرئيسية</h2><span>اختار القسم للبدء</span></div>
+<div class="grid">
+<button class="tile featured" onclick="location.href='drugs.html'"><span class="ico">💊</span><strong>مكتبة الأدوية</strong><small>الأسماء العلمية، الاستعمالات، آلية العمل والتحذيرات</small></button>
+<button class="tile" onclick="showPanel('cases')"><span class="ico">🩺</span><strong>الكيسات الدوائية</strong><small>تدرّب على تحليل الحالات السريرية واتخاذ القرار</small></button>
+<button class="tile" onclick="showPanel('science')"><span class="ico">📚</span><strong>المادة العلمية</strong><small>فارماكولوجي، سموم، وتداخلات دوائية</small></button>
+<button class="tile" onclick="showPanel('sources')"><span class="ico">🔎</span><strong>المصادر</strong><small>دليل التدريب ومراجع طبية موثوقة</small></button>
+<button class="tile" onclick="showPanel('progress')"><span class="ico">📈</span><strong>التقدم</strong><small>تابع إنجازك ومراجعتك الدراسية</small></button>
+<button class="tile" onclick="showPanel('about')"><span class="ico">ℹ️</span><strong>عن التطبيق</strong><small>معلومات عن ILMO Health وطريقة الاستخدام</small></button>
+</div>
+<section id="cases" class="panel"><h2>🩺 الكيسات الدوائية</h2><p>هذا القسم مخصص للتدريب على الحالات بمستويات مبتدئ ومتوسط ومتقدم. يمكن إضافة ملف الكيسات وربطه هنا في الخطوة التالية.</p></section>
+<section id="science" class="panel"><h2>📚 المادة العلمية</h2><p>مساحة لمراجعة علم الأدوية (Pharmacology)، السموم (Toxicology)، التداخلات الدوائية، ومبادئ الاستخدام الآمن للأدوية.</p><p>المصدر الدراسي الأساسي: دليل التدريب الصيدلاني لطلبة المرحلة الثالثة للدكتور ضياء جبار، عند مطابقة المحتوى مع صفحات الدليل.</p></section>
+<section id="sources" class="panel"><h2>🔎 المصادر</h2><ul><li>دليل التدريب الصيدلاني لطلبة المرحلة الثالثة — الدكتور ضياء جبار.</li><li><a href="https://medlineplus.gov/" target="_blank" rel="noopener">MedlinePlus</a> — معلومات صحية للمرضى.</li><li><a href="https://dailymed.nlm.nih.gov/" target="_blank" rel="noopener">DailyMed</a> — نشرات الأدوية.</li><li><a href="https://www.who.int/" target="_blank" rel="noopener">منظمة الصحة العالمية WHO</a>.</li></ul></section>
+<section id="progress" class="panel"><h2>📈 التقدم الدراسي</h2><p>واجهة التقدم جاهزة للربط مع نظام النقاط والإجابات بعد إضافة الكيسات والاختبارات.</p><p id="progressText">إنجازك الحالي محفوظ محلياً عند إضافة أنشطة التعلّم.</p></section>
+<section id="about" class="panel"><h2>ℹ️ عن ILMO Health</h2><p>تطبيق تعليمي للصيدلة يهدف إلى تنظيم مراجعة الأدوية والمادة العلمية والتدريب السريري.</p><p>المعلومات للتعلم ولا تغني عن النشرات الرسمية أو التقييم المهني للحالة الفردية.</p></section>
+<div class="notice">تنبيه طبي: المحتوى للتعليم والمراجعة فقط، وليس بديلاً عن قرار الطبيب أو الصيدلي. تحقّق من النشرة الرسمية والإرشادات المحلية قبل أي استخدام سريري.</div>
+</main>
+<footer><button onclick="window.scrollTo({top:0,behavior:'smooth'})"><b>⌂</b>الرئيسية</button><button onclick="location.href='drugs.html'"><b>💊</b>الأدوية</button><button onclick="showPanel('sources');document.getElementById('sources').scrollIntoView({behavior:'smooth'})"><b>🔎</b>المصادر</button><button onclick="showPanel('progress');document.getElementById('progress').scrollIntoView({behavior:'smooth'})"><b>📈</b>التقدم</button></footer>
+<script>
+function showPanel(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));const p=document.getElementById(id);if(p){p.classList.add('active');p.scrollIntoView({behavior:'smooth',block:'start'})}}
+window.addEventListener('load',()=>{const s=document.getElementById('splash');setTimeout(()=>{s.classList.add('hide');setTimeout(()=>s.remove(),400)},3000)});
+</script>
+</body></html>
